@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - mode: local
+
+dataset: ???
+model: 'meta-llama/Llama-3.2-1B'
+
+sanitized_model: ${multi_replace:${model}, ["/", ":"], "_"}
+logs_dir: ${oc.env:STORAGE_ROOT}/hydra/fv/${sanitized_model}_${now:%Y-%m-%d_%H-%M-%S}
+
+
+hydra:
+  job:
+    # when exceuting a job change to the logs_dir
+    chdir: True
+  run:
+    dir: ${logs_dir}
+  sweep:
+    dir: ${logs_dir}

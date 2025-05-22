@@ -1,0 +1,5 @@
+# @package _global_
+
+project: prompt-fv
+
+timeout: 360

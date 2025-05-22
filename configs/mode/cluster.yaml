@@ -1,0 +1,18 @@
+# @package _global_
+
+defaults:
+  - override /hydra/launcher: submitit_slurm
+  - _self_
+
+project: prompt-fv
+gpus: 1
+timeout: 4200
+
+hydra:
+  launcher:
+    timeout_min: ${timeout}
+    tasks_per_node: ${gpus}
+    gpus_per_task: ${gpus}
+    cpus_per_task: 10
+    comment: ${project}
+    submitit_folder: ${oc.env:STORAGE_ROOT}/hydra/fv/submitit_%j
