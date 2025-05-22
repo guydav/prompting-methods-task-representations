@@ -3,6 +3,14 @@
 
 Code and some of the data for our paper "Do different prompting methods yield a common task representation in language models?": https://arxiv.org/abs/2505.12075
 
+## Table of Contents
+1. [Setup](#setup)
+2. [Preliminary steps](#preliminary-steps)
+3. [Experiments](#experiments)
+4. [Data analysis](#data-analysis)
+5. [Thanks](#thanks)
+6. [Citation](#citation)
+
 ## Setup
 
 The file `fv_env.yaml` provides the output of `conda env export` on the conda environment we used. We also provide `requirements.txt` files. Support for Windows/OSX is limited due to to CUDA dependencies in `bitsandbytes`. 
@@ -150,11 +158,12 @@ We perform our data analysis in the notebooks provided in the `notebook` directo
     - `top_heads`: figures for Finding 3
 
 
-
-## Thanks and citations
+## Thanks
 
 We thank Eric Todd for making code available for their previous paper, "Function Vectors in Large Language Models," which helped inspire our work. This repository started from their codebase adapted to a different template. If you find our work useful, please also see their [repository](https://github.com/ericwtodd/function_vectors) and [project website](https://functions.baulab.info/).
 
+
+## Citation
 
 To cite our work, please use the following entry:
 
