@@ -1,7 +1,7 @@
 
 # Do different prompting methods yield a common task representation in language models?
 
-Code and some of the data for our paper "Do different prompting methods yield a common task representation in language models?": https://arxiv.org/abs/2505.12075
+Code and some of the data for our paper ["Do different prompting methods yield a common task representation in language models?"](https://arxiv.org/abs/2505.12075) by Guy Davidson, Todd M. Gureckis, Brenden M. Lake, and Adina Williams. 
 
 ## Table of Contents
 1. [Setup](#setup)
