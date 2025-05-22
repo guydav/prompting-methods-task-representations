@@ -3,6 +3,9 @@
 
 Code and some of the data for our paper ["Do different prompting methods yield a common task representation in language models?"](https://arxiv.org/abs/2505.12075) by Guy Davidson, Todd M. Gureckis, Brenden M. Lake, and Adina Williams. 
 
+![Figure 1 from our paper: We compare in-context learning task representations formed from demonstrations with those formed from instructions using function vectors (FVs). The process of extracting FVs is shown in Steps (1)-(3). We highlight several findings: We successfully extract FVs from instructions; Instruction FVs offer complementary benefits when applied with demonstration FVs; Different prompting methods yield distinct task representations (highlighted squares on the left LLM are Llama-3.1-8B-Instruct attention heads: those identified by demonstrations only, those identified by instructions only, and shared ones; columns are layers, rows are head indices)](https://guydavidson.me/project/task-representation/featured_hu6569137799203841503.webp)
+**Figure 1:** We compare in-context learning task representations formed from demonstrations with those formed from instructions using function vectors (FVs). The process of extracting FVs is shown in Steps (1)-(3). We highlight several findings: We successfully extract FVs from instructions; Instruction FVs offer complementary benefits when applied with demonstration FVs; Different prompting methods yield distinct task representations (highlighted squares on the left LLM are Llama-3.1-8B-Instruct attention heads: those identified by demonstrations only, those identified by instructions only, and shared ones; columns are layers, rows are head indices)
+
 ## Table of Contents
 1. [Setup](#setup)
 2. [Preliminary steps](#preliminary-steps)
